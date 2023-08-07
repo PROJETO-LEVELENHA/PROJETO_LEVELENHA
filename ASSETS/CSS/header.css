@@ -1,0 +1,110 @@
+/* HEADEr-BOX-02*/
+
+header h1{
+    cursor:default;
+}
+
+header h1:hover{
+    scale: 1.02;
+}
+
+.header-box1{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-container input{
+    width: 300px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #183e62;
+}
+
+.search-container img:hover{
+    scale: 1.04;
+}
+
+.log-in-container{
+    display: flex;
+}
+
+.log-in-container > div{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.log-in-container > div > a{
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    transition: 0.5s;
+}
+
+a:hover{
+    color: #183e62;
+    transition: 0.5s;
+}
+
+.criar{
+    background-color: #F2F2F2;
+}
+
+.criar:hover{
+    background-color: #e6e6e6;
+}
+
+.entrar{
+    background-color: #E3E3E3;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.entrar:hover{
+    background-color: #d5d5d5;
+}
+
+/* HEADEr-BOX-02*/
+
+.header-box2{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: #F0F0F0;
+    gap: 30px;
+}
+
+.header-box2 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.header-box2 a:hover{
+    scale: 1.04;
+}
+
+header img{
+    width: 30px;
+}
