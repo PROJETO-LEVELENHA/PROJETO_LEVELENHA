@@ -4,23 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeveLenha</title>
+    
+    <?php
+        require_once('ASSETS/HTML/LINKs/links-here.html');
+    ?>
 
-    <!-- FONTE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- EXCLUSIVO -->
+    <link rel="stylesheet" href="ASSETS/CSS/homepage.css">
 
-    <!-- ESTILOS -->
-    <link rel="stylesheet" href="assets/CSS/base.css">
-    <link rel="stylesheet" href="assets/CSS/header.css">
-    <link rel="stylesheet" href="assets/CSS/footer.css">
 </head>
 <body class="grid-hp">
     <?php
-        require_once('ASSETS/HTML/header-log-out.html');
+        require_once('ASSETS/HTML/HEADERs/header-log-out.html');
     ?>
     <main>
+        <!-- SEÇÃO 01 - APRESENTACAO -->
+        <section class="hp-apresentacao">
+            <h2><strong>LeveLenha</strong>, o melhor sitede compra de móveis e madeiras da América Latina!</h2>
+        </section>
 
+        <!-- SEÇÃO 02 - OPÇÕES -->
+        <section class="hp-opcoes">
+            <div class="hp-opcoes-container-titulo">
+                <h2 class="hp-opcoes-titulo">O que deseja comprar <span>HOJE?</span></h2>
+            </div>
+            <div class="hp-opcoes-container-sections">
+                <!-- SEÇÃO 02.1 - OPÇÕES -->
+                <section class="hp-opcoes-section">
+                    <a href="">
+                    <div class="hp-opcoes-section-container-img">
+                        <img src="IMAGENS/ICONES/móvel planejado.png" alt="">
+                    </div>
+                    <div class="hp-opcoes-section-container-text">
+                        <h3>Planejar um móvel</h3>
+                    </div>
+                    </a>
+                </section>
+
+                <!-- SEÇÃO 02.2 - OPÇÕES -->
+                <section class="hp-opcoes-section">
+                    <a href="">
+                    <div class="hp-opcoes-section-container-img">
+                        <img src="IMAGENS/ICONES/móvel.png" alt="">
+                    </div>
+                    <div class="hp-opcoes-section-container-text">
+                        <h3>Móvel pré Moldado</h3>
+                    </div>
+                    </a>
+                </section>
+
+                <!-- SEÇÃO 02.3 - OPÇÕES -->
+                <section class="hp-opcoes-section">
+                    <a href="">
+                    <div class="hp-opcoes-section-container-img">
+                        <img src="IMAGENS/ICONES/madeira.png" alt="">
+                    </div>
+                    <div class="hp-opcoes-section-container-text">
+                        <h3>Madeiras</h3>
+                    </div>
+                    </a>
+                </section>
+            </div>
+        </section>
     </main>
     <?php
         require_once('ASSETS/HTML/footer.html');

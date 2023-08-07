@@ -1,0 +1,76 @@
+:root{
+    --bg-verde-01-: #EDFCD0;
+    --bg-verde-02-: #D9F89A;
+
+    --bg-azul-01-: #0085FF;
+    --bg-azul-02-: #2B6499;
+}
+
+/* SEÇÃO 01 - APRESENTACAO */
+
+.hp-apresentacao{
+    background-color: var(--bg-verde-01-);
+    padding: 3rem 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.hp-apresentacao > h2{
+    width: 1100px;
+    text-align: center;
+    font-size: 3em;
+}
+
+.hp-apresentacao > h2 > strong{
+    color: var(--bg-azul-01-);
+}
+
+/* SEÇÃO 02 - OPÇÕES */
+
+.hp-opcoes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hp-opcoes-container-titulo h2{
+    text-align: center;
+    font-size: 2.5em;
+    padding: 2rem 0;
+}
+
+.hp-opcoes-container-sections{
+    width: 1100px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* SEÇÃO 02.[...] - OPÇÕES */
+
+.hp-opcoes-section{
+    background-color: var(--bg-verde-02-);
+    cursor: pointer;
+    width: 28%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 0 0 10px 2px #00000050;
+}
+
+.hp-opcoes-section a{
+    text-decoration: none;
+}
+
+.hp-opcoes-section:hover{
+    transition: 0.5s;
+    scale: 1.04;
+    box-shadow: 0 0 15px 3px #00000050
+}
+
+.hp-opcoes-section h3{
+    font-size: 2.2em;
+    line-height: 40px;
+}
