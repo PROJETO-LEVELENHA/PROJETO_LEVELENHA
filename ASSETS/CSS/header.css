@@ -4,16 +4,12 @@ header h1{
     cursor:default;
 }
 
-header ul{
-    list-style: none;
-}
-
 header h1:hover{
     scale: 1.02;
 }
 
 .header-box1{
-    height: 60px;
+    height: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,7 +82,7 @@ a:hover{
 /* HEADEr-BOX-02*/
 
 .header-box2{
-    height: 40px;
+    height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,7 +112,7 @@ header img{
 /* HEADER BASE */
 
 .header-box{
-    height: 60px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;

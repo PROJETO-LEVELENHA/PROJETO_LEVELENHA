@@ -1,0 +1,50 @@
+header{
+    grid-column: 1/3;
+}
+
+aside{
+    grid-column: 1/2;
+}
+
+main{
+    grid-column: 2/3;
+}
+
+/* ASIDE */
+
+.aside-pessoal{
+    border-right: 1px solid #183e62;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aside-pessoal a{
+    text-decoration: none;
+}
+
+aside img{
+    width: 30px;
+}
+
+.aside-pessoal hr{
+    border-top: 1px solid #183e62;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.aside-pessoal > ul{
+    display: grid;
+    gap: 10px;
+    font-size: 1.1em;
+}
+
+.aside-pessoal > ul > li > a{
+    padding-left: 1rem;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}

@@ -4,6 +4,7 @@
     padding: 0;
     color: #2B6499;
     transition: 0.5s;
+    list-style: none;
 }
 
 /* Firefox */
@@ -33,6 +34,8 @@ body{
     min-height: 100vh;
 }
 
+/* GRIDS */
+
 .grid-hp{
     display: grid;
     grid-template-rows: 100px 1fr 300px;
@@ -40,6 +43,12 @@ body{
 
 .grid-cad{
     display: grid;
+    grid-template-rows: 60px 1fr;
+}
+
+.grid-pessoal{
+    display: grid;
+    grid-template-columns: 300px 1fr;
     grid-template-rows: 60px 1fr;
 }
 
