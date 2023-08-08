@@ -1,3 +1,47 @@
+<?php
+include('conexao.php');
+
+if(isset($_POST['email']) || isset($_POST['senha'])) {
+
+    if(strlen($_POST['email']) == 0) {
+        print"<script>alert('Email não é válido')</script>";
+
+    } else if(strlen($_POST['senha']) == 0) {
+        print"<script>alert('Senha não é válida')</script>";
+        
+    } else {
+
+        $email = $mysqli->real_escape_string($_POST['email']);
+        $senha = $mysqli->real_escape_string($_POST['senha']);
+
+        $sql_code = "SELECT * FROM usuario WHERE email = '$email' AND senha = '$senha'";
+        $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
+
+        $quantidade = $sql_query->num_rows;
+
+        if($quantidade == 1) {
+            
+            $usuario = $sql_query->fetch_assoc();
+
+            if(!isset($_SESSION)) {
+                session_start();
+            }
+
+            $_SESSION['id'] = $usuario['id'];
+            $_SESSION['nome'] = $usuario['nome'];
+            $_SESSION['email'] = $usuario['email'];
+
+            header("Location: PESSOAL/meu-perfil.php");
+
+        } else {
+            print"<script>alert('Email ou senha não é válido')</script>";
+        }
+
+    }
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -23,12 +67,12 @@
 
             <label for="email">
                 Email:
-                <input type="email" name="email">
+                <input type="email" name="email" required placeholder="exemplo@gmail.com">
             </label>
 
             <label for="senha">
                 Senha:
-                <input type="text" name="senha">
+                <input type="text" name="senha" required placeholder="****************">
             </label>
 
             <label class="link">

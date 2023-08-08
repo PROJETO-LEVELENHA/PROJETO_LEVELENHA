@@ -1,3 +1,11 @@
+<?php
+
+if(!isset($_SESSION)) {
+    session_start();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,7 +23,12 @@
 </head>
 <body class="grid-hp">
     <?php
-        require_once('ASSETS/HTML/HEADERs/header-log-out.html');
+        if($_SESSION != null){
+            require_once('ASSETS/HTML/HEADERs/header-completed.html');
+        }
+        else{
+            require_once('ASSETS/HTML/HEADERs/header-log-out.html');
+        }
     ?>
     <main>
         <!-- SEÇÃO 01 - APRESENTACAO -->
@@ -31,7 +44,7 @@
             <div class="hp-opcoes-container-sections">
                 <!-- SEÇÃO 02.1 - OPÇÕES -->
                 <section class="hp-opcoes-section">
-                    <a href="">
+                    <a href="movel-planejado.php">
                     <div class="hp-opcoes-section-container-img">
                         <img src="IMAGENS/ICONES/móvel planejado.png" alt="">
                     </div>
@@ -43,7 +56,7 @@
 
                 <!-- SEÇÃO 02.2 - OPÇÕES -->
                 <section class="hp-opcoes-section">
-                    <a href="">
+                    <a href="movel-pre-moldado.php">
                     <div class="hp-opcoes-section-container-img">
                         <img src="IMAGENS/ICONES/móvel.png" alt="">
                     </div>
@@ -55,7 +68,7 @@
 
                 <!-- SEÇÃO 02.3 - OPÇÕES -->
                 <section class="hp-opcoes-section">
-                    <a href="">
+                    <a href="madeira.php">
                     <div class="hp-opcoes-section-container-img">
                         <img src="IMAGENS/ICONES/madeira.png" alt="">
                     </div>

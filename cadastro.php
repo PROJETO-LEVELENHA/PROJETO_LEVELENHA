@@ -18,27 +18,27 @@
         require_once('ASSETS/HTML/HEADERs/header-base.html');
     ?>
     <main class="bg-linear-green form-center">
-        <form action="#" method="POST">
+        <form action="crud.php" method="POST">
             <h1>Cadastro</h1>
 
             <label for="nome">
                 Nome:
-                <input type="text" name="nome">
+                <input type="text" name="nome" required placeholder="Digite seu nome completo">
             </label>
 
             <label for="email">
                 Email:
-                <input type="email" name="email">
+                <input type="email" name="email" required placeholder="exemplo@gmail.com">
             </label>
 
             <label for="senha">
                 Senha:
-                <input type="text" name="senha">
+                <input type="text" name="senha" required placeholder="************">
             </label>
 
             <label for="rsenha">
                 Repetir senha:
-                <input type="text" name="rsenha">
+                <input type="text" name="rsenha" required placeholder="************">
             </label>
 
             <label class="link">
