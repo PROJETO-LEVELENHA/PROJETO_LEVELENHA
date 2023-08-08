@@ -37,3 +37,14 @@ body{
     display: grid;
     grid-template-rows: 100px 1fr 300px;
 }
+
+.grid-cad{
+    display: grid;
+    grid-template-rows: 60px 1fr;
+}
+
+/* THEMAS */ 
+
+.bg-linear-green{
+    background-image: linear-gradient(120deg, #EDFCD0, #D9F89A, #E5FABB);
+}

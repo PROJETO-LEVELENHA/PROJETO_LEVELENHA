@@ -1,0 +1,63 @@
+input{
+    border: 1px solid #2B6499;
+}
+
+.form-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-center > form{
+    background-color: white;
+    border: 1px solid #2B6499;
+    padding: 1.5rem;
+    border-radius: 15px;
+
+    display: grid;
+    gap: 5px;
+}
+
+.form-center > form > h1{
+    text-align: center;
+}
+
+.form-center > form label{
+    display: grid;
+}
+
+.form-center > form > label > input{
+    padding: 5px;
+    font-size: 1.2em;
+    width: 400px;
+}
+
+label.link{
+    padding: 0.8rem 0;
+
+    display: flex !important;
+    justify-content: space-between;
+}
+
+label.link > a{
+    text-decoration: none;
+}
+
+label.link > a:hover, label.link > a span:hover{
+    color: #133e66;
+}
+
+label.link > a span{
+    text-decoration: underline;
+}
+
+input.is-button{
+    background-color: white;
+    padding: 0.4rem 0;
+    font-size: 1.2em;
+}
+
+input.is-button:hover{
+    background-color: #2B6499;
+    color: white;
+}
